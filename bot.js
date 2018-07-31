@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const fs = require('fs.');
 const client = new Discord.Client();
  const prefix = "!";
 client.on('ready', () => {
@@ -6,7 +7,6 @@ client.on('ready', () => {
 });
 
 let sw = JSON.parse(fs.readFileSync("./setWlc.json", "utf8")) 
-const fs = require('fs.');
 
  
     client.on('message', message => {
