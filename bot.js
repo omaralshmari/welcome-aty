@@ -5,7 +5,8 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-let sw = JSON.parse("/setWlc.json", "UTF8")
+let sw = JSON.parse(fs.readFileSync("./setWlc.json", "utf8")) 
+
  
     client.on('message', message => {
 const Canvas = require("canvas") // npm i canvas
