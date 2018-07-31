@@ -6,6 +6,7 @@ client.on('ready', () => {
 });
 
 let sw = JSON.parse(fs.readFileSync("./setWlc.json", "utf8")) 
+const fs = require('fs.');
 
  
     client.on('message', message => {
