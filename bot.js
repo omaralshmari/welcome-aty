@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-console.log("Welcome Savage.");
+console.log("𝗔𝗧𝗬");
  
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
@@ -11,4 +11,5 @@ https://discord.gg/NkV44a4 **`)
 
 }).catch(console.error)
 })
+
 client.login(process.env.BOT_TOKEN);
